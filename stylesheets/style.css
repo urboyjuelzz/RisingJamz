@@ -1,0 +1,114 @@
+/*Joel Ceballos
+CSS style sheet for @Rising Jamz*/
+
+
+body{
+  background-image: url("../images/crowd_background_blkwht.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+
+}
+
+/*Needs to be in the center*/
+.logo h1{
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100px;
+  height: inherit;
+}
+
+#nav {
+  text-align: center;
+  /*height: 40px;
+  border: none;
+  margin: 10;*/
+}
+/*Needs to be in the center*/
+#nav li{
+  list-style: none;
+  display: inline-block;
+  /*font-size: 20px;
+  padding: inherit;*/
+}
+#nav a{
+  color: #3297FD;
+  display: block;
+  font-family: arial;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  padding: 9px 18px 9px;
+  text-decoration: none;
+}
+#nav hover{
+  background-color: #2D89E5;
+  color: #fff;
+}
+
+.main{
+  text-align: center;
+  font-family: Brush Script MT,cursive;
+  font-weight: bolder;
+}
+
+.motto {
+  font-size: 50px;
+  color: black;
+  margin: 50px;
+}
+
+.button{
+  display: inline-block;
+  /*These background-color wont work because you changed it individually*/
+  /*background-color: transparent;*/
+  /*background-color: #CBCBCB;*/
+  border: 1px solid black;
+  width: 300px;
+  border-radius: 8px;
+  margin: 20px;
+  margin-top: 100px;
+  position: relative;
+  /*border-style: hidden;*/
+  padding: 10px;
+  font-size: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span::after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 20px;
+  transition: 0.5s;
+}
+.button:hover span{
+  padding-right: 25px;
+}
+.button:hover span::after{
+  opacity: 1;
+  right: 0;
+}
+
+.button1{
+  background-color: blue;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button2{
+  background-color: green;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.section1 {
+  padding-top: 400px;
+}
